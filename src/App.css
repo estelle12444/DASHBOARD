@@ -1,0 +1,185 @@
+.App {
+  text-align: center;
+}
+.login-logo{
+  height:'100px';
+  width:'250px';
+}
+
+.content-wrapper{
+  padding: 2.1rem 2rem 0;
+}
+
+.titre{
+  background-color: rgba(49, 48, 48, 0.772);
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+.titre-dark{
+	background-color: #ff4961;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+}
+.jaune{
+  color: rgb(192, 192, 52);
+}
+.vert{
+  color: rgb(38, 207, 134);
+}
+
+.texte{
+  text-align: center;
+  font-weight: 400;
+  
+}
+.taille{
+  height: 400px;
+}
+
+.brand-logo{
+  height: 60px;
+  width: 250px;
+}
+
+
+
+body{
+	transition: background-color 0.4s ease-in-out;
+	
+}
+
+.wrapper{
+	position: absolute;
+	top:30%;
+	left:50%;
+	transform: translate(-50%, 50%);
+}
+
+
+
+.custom-toggle{
+	display: inline-block;
+	user-select: none;
+	position: relative;
+}
+
+.custom-toggle input
+{
+	display: none;
+}
+
+.custom-toggle label{
+	position: relative;
+	display: block;
+	width:96px;
+	height:44px;
+	border-radius:22px;
+	background-color: #efefef;
+	cursor: pointer;
+}
+
+.custom-toggle label:after{
+	position: relative;
+	display: block;
+	content: "";
+	width:38px;
+	height: 38px;
+	top:3px;
+	left:3px;
+	border-radius: 19px;
+	pointer-events: none;
+	background-color: #fff;
+	transition:all 0.4s ease-in-out;
+}
+
+.custom-toggle  label:active:after{
+	width:50px;
+}
+
+.custom-toggle input:checked + label:active:after{
+	left: 43px;
+}
+
+.custom-toggle input:checked + label:after{
+	left:55px;
+	background-color: #2196f3;
+}
+
+
+
+
+.about-details {
+	background-color: white;
+
+}
+
+.about-details-dark {
+	
+	background-color: #000;
+	color: #fff;
+	
+}
+
+.card {
+	background-color: white;	
+	
+}
+
+
+.h2{
+	color: #00000081;
+}
+.h2-dark{
+	
+	color: #fff;
+	
+}
+
+.h4-dark{
+	color: #fff;
+	background-color: #fff;
+}
+.h4{
+	color: #00000081;
+	background-color: #fff;
+}
+
+
+.tr{
+	color: #0000009e;
+}
+.tr-dark{
+	color: #fff;
+}
+
+.th{
+	color: #000;
+}
+.th-dark{
+	color: #fff;
+}
+
+
+.card-dark {	
+	background-color: #000;
+	color: #000;
+}
+
+.btn-floating {
+
+	background-color: rgba(39, 49, 125, 0.286);
+	color: white;
+	border-radius: 50%;
+}
+
+.btn-floating:hover {
+	background-color: rgb(23, 28, 48);
+	color: white;
+}
+
+.fa {
+	font-size: 20px;
+	margin-left: 15px;
+}
