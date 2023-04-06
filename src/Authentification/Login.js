@@ -1,6 +1,29 @@
-import React from "react";
+import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import logo from "../logo.png";
+
+function Input({}){
+    
+    return (
+        <fieldset class="form-group position-relative has-icon-left">
+            <input type="password" class="form-control" id="user-password" placeholder="Enter Password" required />
+            <div class="form-control-position">
+                <i class="la la-key"></i>
+            </div>
+        </fieldset>
+    )
+}
+
+function Remember({}){
+    return (
+        <fieldset class="form-group position-relative has-icon-left">
+            <input type="password" class="form-control" id="user-password" placeholder="Enter Password" required />
+            <div class="form-control-position">
+                <i class="la la-key"></i>
+            </div>
+        </fieldset>
+    )
+}
 
 function Login() {
     return (

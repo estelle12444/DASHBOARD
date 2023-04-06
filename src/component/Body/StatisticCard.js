@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../Header/ThemeContext";
 import styled from "styled-components";
-import { ColorContext } from "./Function";
+import { ColorContext } from "./ContextComponent";
 
 function Content({ items }) {
 

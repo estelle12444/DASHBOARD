@@ -4,10 +4,10 @@ import { TableContext } from "./ContextComponent";
 
 
 
-function CardHeader({ props }) {
+function CardHeader({ title }) {
     return (
         <div class="card-header" >
-            <h4 class="card-title"  >{props.title}</h4>
+            <h4 class="card-title"  >{title}</h4>
             <Link class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></Link>
             <div class="heading-elements">
                 <ul class="list-inline mb-0">
@@ -20,12 +20,12 @@ function CardHeader({ props }) {
         </div>
     )
 }
-function TableHeader({ item }) {
+function TableHeader({ items }) {
     return (
         <thead>
             <tr >
-                {item.map((items) => {
-                    return <th >{items}</th>;
+                {items.map((item) => {
+                    return <th >{item}</th>;
                 })}
             </tr>
         </thead>
@@ -38,7 +38,7 @@ function TableBody({ subItems }) {
             {subItems.map((subItem) => {
                 return (
                     <tr key={subItem.id}>
-                        <td >{subItem.Name}</td>
+                        <td>{subItem.Name}</td>
                         <td>{subItem.Position}</td>
                         <td>{subItem.Office}</td>
                         <td>{subItem.Age}</td>
@@ -68,8 +68,8 @@ function Table({ donnee, value }) {
                                         <div class=" card-dashboard">
 
                                             <table class="table table-striped table-bordered dynamic-height">
-                                                <TableHeader item={donnee} />
-                                                <TableBody item={value} />
+                                                <TableHeader items={donnee} />
+                                                <TableBody subItems={value} />
 
                                             </table>
                                         </div>
