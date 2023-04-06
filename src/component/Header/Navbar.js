@@ -7,11 +7,11 @@ import '../../App.css';
 
 function Navbar(props) {
 
-    const { darkMode, setDarkMode } = useContext(ThemeContext);
-    const handleTheme = () => {
-        setDarkMode(!darkMode);
-        localStorage.setItem("darkMode", !darkMode);
-    };
+    // const { darkMode, setDarkMode } = useContext(ThemeContext);
+    // const handleTheme = () => {
+    //     setDarkMode(!darkMode);
+    //     localStorage.setItem("darkMode", !darkMode);
+    // };
 
     return (
 
